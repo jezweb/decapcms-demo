@@ -1,0 +1,17 @@
+{
+	"title": "What You Get",
+	"services": [
+		{
+			"title": "Easy Content Editing",
+			"description": "Intuitive admin interface for managing your website content without touching code."
+		},
+		{
+			"title": "Git-Powered Workflow",
+			"description": "All changes are committed to Git, giving you full version control and history."
+		},
+		{
+			"title": "Lightning Fast",
+			"description": "Deployed on Cloudflare's global edge network for instant page loads worldwide."
+		}
+	]
+}

@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: YOUR_USERNAME/decapcms-demo # Change this to your GitHub repo
+  branch: main
+
+# For local development, you can use the test-repo backend:
+# backend:
+#   name: test-repo
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "public/content/hero.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "text" }
+          - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - { label: "CTA Link", name: "ctaLink", widget: "string" }
+
+      - label: "About Section"
+        name: "about"
+        file: "public/content/about.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+
+      - label: "Services Section"
+        name: "services"
+        file: "public/content/services.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - label: "Contact Section"
+        name: "contact"
+        file: "public/content/contact.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }

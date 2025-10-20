@@ -1,0 +1,4 @@
+{
+	"title": "About This Demo",
+	"content": "This is a demonstration of Decap CMS (formerly Netlify CMS) integrated with a React application running on Cloudflare Workers.\n\n**Key Features:**\n\n- ✅ Git-based content management\n- ✅ No database required\n- ✅ Content stored as JSON files\n- ✅ Fast, edge-deployed with Cloudflare\n- ✅ Modern React with TypeScript\n- ✅ Tailwind CSS v4 for styling\n\nAll content on this page can be edited through the CMS admin interface at `/admin`."
+}
