@@ -1,11 +1,12 @@
+# For local development - test-repo backend (no authentication required)
 backend:
-  name: github
-  repo: YOUR_USERNAME/decapcms-demo # Change this to your GitHub repo
-  branch: main
+  name: test-repo
 
-# For local development, you can use the test-repo backend:
+# For production with GitHub (requires OAuth setup)
 # backend:
-#   name: test-repo
+#   name: github
+#   repo: jezweb/decapcms-demo
+#   branch: master
 
 media_folder: "public/images"
 public_folder: "/images"
