@@ -5,8 +5,8 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "decapcms-demo",
-	"main": "src/index.ts",
-	"compatibility_date": "2025-10-11",
+	"main": "dist/client/decapcms_demo/index.js",
+	"compatibility_date": "2025-10-08",
 	"observability": {
 		"enabled": true
 	},
@@ -16,7 +16,7 @@
 	 * This ensures /api/* routes go to Hono, not the SPA fallback
 	 */
 	"assets": {
-		"directory": "./dist/client",
+		"directory": "./dist/client/client",
 		"binding": "ASSETS",
 		"not_found_handling": "single-page-application",
 		"run_worker_first": ["/api/*"]

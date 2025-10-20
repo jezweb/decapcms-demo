@@ -8,11 +8,12 @@ export default defineConfig({
 		react(),
 		tailwindcss(),
 		cloudflare({
-			// Cloudflare Workers + Static Assets
+			configPath: 'wrangler.jsonc',
 		}),
 	],
 	build: {
-		outDir: 'dist',
+		outDir: 'dist/client',
 		emptyOutDir: true,
 	},
+	publicDir: 'public',
 })

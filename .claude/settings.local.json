@@ -10,7 +10,9 @@
       "Bash(npm install --legacy-peer-deps)",
       "Bash(test -f package-lock.json)",
       "Bash(git init)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Decap CMS demo with Cloudflare Workers\n\n- React 19 + TypeScript + Tailwind v4\n- Cloudflare Workers with Hono routing\n- Decap CMS for content management\n- Landing page with Hero, About, Services, Contact sections\n- Vite for fast development\n- Ready for deployment to Cloudflare\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(npm run build)"
     ],
     "deny": [],
     "ask": []
